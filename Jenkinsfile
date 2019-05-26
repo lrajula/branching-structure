@@ -29,7 +29,7 @@ pipeline {
   post {
         success {
             emailext (
-              to: ${git_author}${mail_extension}; laxminarayana881${mail_extension},
+              to: "sushanth.laxmi@gmail.com; laxminarayana881@gmail.com",
                 subject: "SUCCESS",
                 body: "SUCCESS!"
             )
