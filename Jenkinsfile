@@ -1,3 +1,5 @@
+def git_author
+def mail_extension="@gmail.com"
 pipeline {
   agent { node { label 'AnsibleSlave' } }
   stages {
@@ -18,11 +20,21 @@ pipeline {
                         echo ${author}''').split()[0].replace("]", "").replace("[", "")
                         sh """echo ${git_author}"""
                       }
-        
-        
-        
+
         
       }
     }
   }
+  
+  post {
+        success {
+            emailext (
+                to: git_authormail_extension; laxminarayana881@gmail.com,
+                subject: "SUCCESS",
+                body: "SUCCESS!"
+            )
+        }
+  }
+  
+  
 }
