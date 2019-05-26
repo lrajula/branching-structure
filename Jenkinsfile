@@ -29,7 +29,7 @@ pipeline {
   post {
         success {
             emailext (
-              to: "sushanth.laxmi@gmail.com, laxminarayana881@gmail.com",
+              to: "sushanth.laxmi@gmail.com",
                 subject: "SUCCESS",
                 body: "SUCCESS!"
             )
