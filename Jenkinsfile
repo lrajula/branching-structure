@@ -31,8 +31,8 @@ pipeline {
             
           emailext (
        attachLog: true,
-       subject: subject,
-       body: body,
+       subject: "test subject",
+       body: "test body",
        to: 'laxminarayana.rajula@teradata.com'
      )
           
