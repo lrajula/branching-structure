@@ -1,5 +1,5 @@
 pipeline {
-  agent "AnsibleSlave"
+  agent { node { label 'AnsibleSlave' } }
   stages {
     stage('build') {
       steps {
