@@ -6,7 +6,7 @@ pipeline {
         sh 'echo Building ${BRANCH_NAME}...'
         
           script {
-                        def selectedBranch = [[name: ${BRANCH_NAME}]]
+                        def selectedBranch = [[name: "${BRANCH_NAME}"]]
                         checkout([$class: 'GitSCM', branches: selectedBranch,
                                 doGenerateSubmoduleConfigurations: false,
                                 extensions: [],
