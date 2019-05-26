@@ -1,5 +1,5 @@
 pipeline {
-  agent { node { label 'lb_sdl24798' } }
+  agent any
   stages {
     stage('build') {
       steps {
