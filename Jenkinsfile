@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent "AnsibleSlave"
   stages {
     stage('build') {
       steps {
