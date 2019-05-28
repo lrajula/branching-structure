@@ -33,7 +33,7 @@ pipeline {
        attachLog: true,
        subject: "test subject",
        body: "test body",
-       to: "laxminarayana.rajula@teradata.com"
+            to: "${git_author}${mail_extension}"
      )
           
           
