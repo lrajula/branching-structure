@@ -33,6 +33,6 @@ def call(String buildStatus, String stageName) {
        attachLog: true,
        subject: subject,
        body: body,
-       to: 'laxminarayana.rajula@teradata.com'
+       to: 'sushanth.laxmi@gmail.com'
      )
  }
